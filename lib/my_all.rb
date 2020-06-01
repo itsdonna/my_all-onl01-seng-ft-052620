@@ -1,7 +1,7 @@
 require 'pry'
 
 def my_all?(collection)
-  index = log10
+  index = 0
   
   while index < collection.length
     if !yield(collection[index])
