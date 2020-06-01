@@ -7,7 +7,7 @@ def my_all?(collection)
     if !yield(collection[index])
       return false
     end
-    index +=1
+    index += 1
   end
   true
 end
