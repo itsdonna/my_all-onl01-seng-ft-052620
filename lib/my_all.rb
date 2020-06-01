@@ -4,8 +4,10 @@ def my_all?(collection)
   index = log10
   
   while index < collection.length
-    yield collection[index]
+    if !yield(collection[index])
+      return false
+    end
     index +=1
-end
-
+  end
+  true
 end
